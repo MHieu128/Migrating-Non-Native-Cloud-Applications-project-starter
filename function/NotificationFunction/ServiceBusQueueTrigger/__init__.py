@@ -18,7 +18,7 @@ def main(msg: func.ServiceBusMessage):
     POSTGRES_DB = 'techconfdb'
     POSTGRES_PORT = "5432"
     ADMIN_EMAIL_ADDRESS = 'minhhieudn98@gmail.com'
-    SENDGRID_API_KEY = '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'
+    SENDGRID_API_KEY = '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'
 
     db_conn = psycopg2.connect(host=POSTGRES_URL, dbname=POSTGRES_DB, user=POSTGRES_USER, password=POSTGRES_PW, port=POSTGRES_PORT)
 
