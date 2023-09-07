@@ -93,6 +93,6 @@ For essential using:
 
 ## Architecture Explanation
 
-I have split the cost calculation for Azure's architectural design into two subscriptions for two distinct operational needs. The usage for testing and tiny web apps comes first. There is no need to build up the web app, and the registration is not vast for purposes like small-scale web tech conferences.
+I've divided the cost calculation for Azure's architectural design into two subscriptions tailored to meet distinct operational requirements. Initially, we're focusing on usage related to testing and small-scale web applications. In these scenarios, there's no need for substantial web app expansion, and user registrations are limited, particularly for events like small-scale web tech conferences.
 
-The second subscription is for tremendous user access, similar to the number of registrations and access for Next.js, and is intended for online tech conferences for significant businesses. We need a more scalable web app because many users are accessing and registering for it. With the second subscription, however, the database's price remains a significant worry. If we can estimate the website visitors' volume, we might need to limit the database capacity.
+The second subscription accommodates extensive user access, akin to the registration and access levels seen with Next.js. This subscription targets online tech conferences for significant enterprises, where numerous users access and register for the event. In this context, we need a more scalable web application. However, we are mindful of the database cost implications within the second subscription. Depending on our ability to estimate the volume of website visitors, we may consider imposing limits on database capacity.
