@@ -76,10 +76,10 @@ For basic/tesing using:
 | Azure Resource            | Service Tier            | Monthly Cost |
 | ------------------------- | ----------------------- | ------------ |
 | _Azure Postgres Database_ | Basic, 1 vCore(s), 5 GB | 25.32 USD    |
-| _Azure Service Bus_       | Basic                   | 10 USD       |
+| _Azure Service Bus_       | Basic                   | 0.05 USD     |
 | _Azure Function App_      | Basic B1                | 12.41 USD    |
 | Azure Service App Plan    | Basic B1                | 12.41 USD    |
-| _Total cost_              | N/A                     | USD          |
+| _Total cost_              | N/A                     | 50.19 USD    |
 
 For essential using:
 
@@ -89,8 +89,10 @@ For essential using:
 | _Azure Service Bus_       | Standard                  | 10 USD       |
 | _Azure Function App_      | Premium EP1               | 157.72 USD   |
 | Azure Service App Plan    | Premium P1V3              | 113.15 USD   |
-| _Total cost_              | N/A                       | USD          |
+| _Total cost_              | N/A                       | 548.16 USD   |
 
 ## Architecture Explanation
 
-This is a placeholder section where you can provide an explanation and reasoning for your architecture selection for both the Azure Web App and Azure Function.
+I have split the cost calculation for Azure's architectural design into two subscriptions for two distinct operational needs. The usage for testing and tiny web apps comes first. There is no need to build up the web app, and the registration is not vast for purposes like small-scale web tech conferences.
+
+The second subscription is for tremendous user access, similar to the number of registrations and access for Next.js, and is intended for online tech conferences for significant businesses. We need a more scalable web app because many users are accessing and registering for it. With the second subscription, however, the database's price remains a significant worry. If we can estimate the website visitors' volume, we might need to limit the database capacity.
